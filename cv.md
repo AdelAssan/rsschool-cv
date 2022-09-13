@@ -1,16 +1,16 @@
-#rsschool-cv
-#Assanova Adel
+# rsschool-cv
+# Assanova Adel
 ## Contacts
 * Location: Nur-Sultan, Kazakhstan
 * Phone: +77086253569
 * Email: adelassanova@gmail.com
 * GitHub: AdelAssan
 
-##About Me
+## About Me
 
-####I live in the city of Nur-Sultan (Astana), I graduated from the IT-technologies faculty of ENU. I love to read, and I also enjoy dancing. Started web development courses in 2021. Currently looking for a dream job.
+#### I live in the city of Nur-Sultan (Astana), I graduated from the IT-technologies faculty of ENU. I love to read, and I also enjoy dancing. Started web development courses in 2021. Currently looking for a dream job.
 
-##Skills
+## Skills
 * HTML
 * CSS
 * JavaScript
@@ -19,7 +19,7 @@
 * Node.js
 * WebPack
 
-##Code Example
+## Code Example
 
 ```
 React.useEffect(() => {
@@ -38,3 +38,13 @@ React.useEffect(() => {
         }
     }, [loggedIn]);
 ```
+## Education
+* L.N.Gumilyov Eurasian National University
++ Computer Science and Software
+* Yandex Practicum
++ web-developer
+
+## Languages
+* Russian - native
+* Kazakh - conversational level
+* English - B1
