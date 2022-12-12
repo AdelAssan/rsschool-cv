@@ -1,14 +1,14 @@
 # rsschool-cv
 # Assanova Adel
 ## Contacts
-* Location: Nur-Sultan, Kazakhstan
+* Location: Astana, Kazakhstan
 * Phone: +77086253569
 * Email: adelassanova@gmail.com
 * GitHub: AdelAssan
 
 ## About Me
 
-#### I live in the city of Nur-Sultan (Astana), I graduated from the IT-technologies faculty of ENU. I love to read, and I also enjoy dancing. Started web development courses in 2021. Currently looking for a dream job.
+#### I live in the city of Astana, I graduated from the IT-technologies faculty of ENU. I love to read, and I also enjoy dancing. Started web development courses in 2021. Currently looking for a dream job.
 
 ## Skills
 * HTML
@@ -22,21 +22,23 @@
 ## Code Example
 
 ```
-React.useEffect(() => {
-        if (loggedIn) {
-            setIsLoadingAllData(true);
-            api.getAllData()
-                .then((data) => {
-                        const [userData, cardsData] = data;
-                        putCards(cardsData.reverse());
-                        setCurrentUser(userData);
-                    }
-                ).catch(error => console.log(error))
-                .finally(() => {
-                    setIsLoadingAllData(false);
-                })
+request.onload = function() {
+  if (request.status >= 200 && request.status < 400) {
+    let data = JSON.parse(request.response);
+    for(let i = 0; i < data.length; i++){
+        if(data[i].price < 5){
+            //console.log(data[i].name + data[i].price);
+            let arr = data[i];
+            //console.log(arr);
+            sliderText.forEach((n) => n.textContent = arr.name);
+            sliderAuthor.forEach((n) => n.textContent = arr.price);
         }
-    }, [loggedIn]);
+    }
+  } else {
+    console.log(request.status + "Ошибка")
+  }
+};
+request.send();
 ```
 ## Education
 * L.N.Gumilyov Eurasian National University
