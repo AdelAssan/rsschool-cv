@@ -41,10 +41,8 @@ request.onload = function() {
 request.send();
 ```
 ## Education
-* L.N.Gumilyov Eurasian National University
-+ Computer Science and Software
-* Yandex Practicum
-+ web-developer
+* L.N.Gumilyov Eurasian National University: Computer Science and Software
+* Yandex Practicum: web-developer
 
 ## Languages
 * Russian - native
