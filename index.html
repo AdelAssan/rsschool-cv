@@ -1,10 +1,90 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="eng">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
     <title class="title">HTML, CSS &amp; Git Basics</title>
 </head>
-<body>
-
+<body class="page">
+    <header class="header">
+        <h1 class="header__title">rsschool-cv</h1>
+    </header>
+    <main>
+    <section class="cv">
+        <nav class="cv__about">
+           <img class="cv__photo" alt="My photo" src="./images/photo.jpg">
+           <div>
+           <h2 class="cv__name">Assanova Adel</h2>
+           <h3 class="cv__text">Contacts</h3>
+           <ul class="cv__list">
+              <li class="cv__item">Location: Astana, Kazakhstan</li>
+              <li class="cv__item">Phone: +77086253569</li>
+              <li class="cv__item">Email: adelassanova@gmail.com</li>
+              <li class="cv__item">GitHub: @AdelAssan</li>
+           </ul>
+           </div>
+        </nav>
+        <h3 class="cv__text">About Me</h3>
+        <p class="cv__paragraph">I live in the city of Astana, I graduated from the IT-technologies faculty of ENU. I love to read, and I also enjoy dancing.
+             Started web development courses in 2021. Currently looking for a dream job.</p>
+        <h3 class="cv__text">Skills</h3>
+        <ul class="cv__list">
+            <li class="cv__item">HTML</li>
+            <li class="cv__item">CSS</li>
+            <li class="cv__item">JavaScript</li>
+            <li class="cv__item">React</li>
+            <li class="cv__item">Git</li>
+            <li class="cv__item">Node.js</li>
+            <li class="cv__item">WebPack</li>
+        </ul>
+        <h3 class="cv__text">Portfolio</h3>
+        <ul class="cv__list">
+            <li class="cv__item"><a target="_blank" href="https://adelassan.github.io/how-to-learn/"  rel="noreferrer" class="cv__sites">Static website</a></li>
+            <li class="cv__item"><a target="_blank" href="https://adelassan.github.io/russian-travel/"  rel="noreferrer" class="cv__sites">Responsive website</a></li>
+            <li class="cv__item"><a  target="_blank" href="https://mesto.onrender.com/"  rel="noreferrer" class="cv__sites">Single Page Application</a></li>
+            <li class="cv__item"><a  target="_blank" href="https://movies-frontend-t7zv.onrender.com/"  rel="noreferrer" class="cv__sites">Graduation project</a></li>
+        </ul>
+        <h3 class="cv__text">Code Example</h3>
+        <p class="cv__code">
+        <code>
+            request.onload = function() {
+                if (request.status >= 200 && request.status < 400) {<br>
+                  let data = JSON.parse(request.response);<br>
+                  for(let i = 0; i < data.length; i++){<br>
+                      if(data[i].price < 5){<br>
+                          //console.log(data[i].name + data[i].price);<br>
+                          let arr = data[i];<br>
+                          //console.log(arr);<br>
+                          sliderText.forEach((n) => n.textContent = arr.name);<br>
+                          sliderAuthor.forEach((n) => n.textContent = arr.price);<br>
+                      }<br>
+                  }<br>
+                } else {<br>
+                  console.log(request.status + "Ошибка")<br>
+                }<br>
+              };<br>
+              request.send();<br>
+        </code>
+        </p>
+        <h3 class="cv__text">Education</h3>
+        <ul class="cv__list">
+            <li class="cv__item">L.N.Gumilyov Eurasian National University: Computer Science and Software</li>
+            <li class="cv__item">Yandex Practicum: web-developer</li>
+        </ul>
+        <h3 class="cv__text">Languages</h3>
+        <ul class="cv__list">
+            <li class="cv__item">English - B1</li>
+            <li class="cv__item">Russian - native</li>
+            <li class="cv__item">Kazakh - conversational level</li>
+        </ul>
+    </section>
+    </main>
+    <footer class="footer">
+        <div>
+           <a href="https://rs.school/js/" class="footer__link" target="_blank" rel="noreferrer"><img class="footer__link" alt="Logo" src="./images/rs_school_js.svg"></a>
+           <a class="footer__github" target="_blank"  rel="noreferrer" href="https://github.com/AdelAssan"><img class="footer__github-logo" alt="Logo" src="./images/iconmonstr-github-1.svg">Github</a>
+        </div>
+        <p class="footer__author">&copy; 2022. Assanova Adel</p>
+    </footer>
 </body>
 </html>
